@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Jayden",
+    "magic": "Magic-Fair",
+    "color": "Red-Ranger",
+    "photo": "https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/power-rangers-super-samurai-218-clip-16x9.jpg"
+  },
+  {
+    "name": "Kevin",
+    "magic": "Magic-Water",
+    "color": "Blue-Ranger",
+    "photo": "https://images.satu.kz/83557974_w600_h600_83557974.jpg"
+  },
+  {
+    "name": "Mike",
+    "magic": "Magic-Wind",
+    "color": "Green-Ranger",
+    "photo": "https://i.pinimg.com/736x/4c/94/89/4c9489c937f2f48b65504521301a9376.jpg"
+  },
+  {
+    "name": "Emily",
+    "magic": "Magic-Earth",
+    "color": "Yellow-Ranger",
+    "photo": "https://sun9-41.userapi.com/impf/x5OBNqDRsViKl9ZIZP4eg3rucKtwNBC3xL44fg/spUWQYchtBA.jpg?size=807x454&quality=96&sign=e2eac0e562bd3234191f13bff710a228&c_uniq_tag=s-4o4gB99JzycoduGeL8wMu9IM7wGJrbO0EN5fhYxR8&type=album"
+  },
+  {
+    "name": "Mia",
+    "magic": "Magic-Sky",
+    "color": "Pink-Ranger",
+    "photo": "https://avatars.dzeninfra.ru/get-zen_doc/9729319/pub_6446456a2068b843f7d4951e_64464be82068b843f7e5c118/scale_1200"
+  },
+  {
+    "name": "Antonio",
+    "magic": "Magic-Light",
+    "color": "Gold-Ranger",
+    "photo": "https://i.pinimg.com/474x/5c/b1/4c/5cb14cbf4741969e7807cdda0da948b9.jpg"
+  }
+]

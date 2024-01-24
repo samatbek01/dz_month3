@@ -18,14 +18,19 @@ modal.onclick = (event) => {
         closeModal()
     }
 }
-//скрол 
-const scrollDown = () => {
-    if(window.scrollY + window.innerHeight + 1 >= document.documentElement.scrollHeight){
+
+//скрол
+const scrollHandler = () =>{
+    if ((window.innerHeight + window.screenY) >= document.body.offsetHeight){
         openModal()
-        document.removeEventListener("scroll", scrollDown)
+        window.removeEventListener(`scroll` , scrollHandler)
     }
 }
-document.addEventListener('scroll', scrollDown)
+window.addEventListener(`scroll` , scrollHandler)
+
+// console.log (window.innerHeight)
+// console.log(window. screenY)
+// console.log(document.body.offsetHeight)
 
 //модальное окно каждый 10 секунд
-setTimeout(openModal , 10000)
+// setTimeout(openModal , 10000)

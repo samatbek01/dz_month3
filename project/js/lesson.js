@@ -101,6 +101,78 @@ converter(somInput, usdInput, eurInput, 'som')
 converter(usdInput, somInput, eurInput ,'usd')
 converter(eurInput, somInput, usdInput ,'eur')
 
+//Card Switcher
+// const card = document.querySelector('.card')
+// const btnPrev  = document.querySelector('#btn-prev')
+// const btnNext = document.querySelector('#btn-next')
+//
+// let count = 1
+// btnNext.onclick = ()=>{
+//     count++
+//     fetch(`https://jsonplaceholder.typicode.com/todos${count}`)
+//         .then(responce => responce.json())
+//         .then(data => {
+//             card.innerHTML = `
+//             <p>${data.title}</p>
+//             <p style="color:${data.completed ? 'green' : 'red'} ">
+//             ${data.completed}
+//             </p>
+//             <span>${data.id}</span>
+//             `
+//             card.style.borderStyle = data.constructor ? 'green': 'red'
+//         })
+// }
+// btnNext()
+
+
+
+const card = document.querySelector('.card')
+const btnPrev = document.querySelector('#btn-prev')
+const btnNext = document.querySelector('#btn-next')
+
+let count = 1
+const cardFetcher = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            card.innerHTML =  `
+            <p>${data.title} </p>
+            <p style="color: ${data.completed ? 'green' : 'red'}">
+            ${data.completed}
+            </p>
+            <span>${data.id}</span>
+`
+            card.style.borderStyle = data.completed ? 'green': 'red'
+        })
+}
+const  btnCard = () =>{
+    cardFetcher(1)
+}
+btnCard()
+
+btnNext.onclick = () =>{
+    if (count<200){
+        count++
+    }else {
+        count = 1
+    }
+    cardFetcher(count)
+}
+
+btnPrev.onclick = () =>{
+    if (count > 1){
+        count--
+    }else {
+        count = 200
+    }
+    cardFetcher(count)
+}
+
+// 2 - задание
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then( data => console.log(data))
+
 
 
 

@@ -34,3 +34,46 @@ window.addEventListener(`scroll` , scrollHandler)
 
 //модальное окно каждый 10 секунд
 // setTimeout(openModal , 10000)
+
+//Post data
+const formElement = document.querySelector('form')
+
+// const postData = (form) =>{
+//     form.addEventListener('submit' , (event) =>{
+//         event.preventDefault()
+//
+//         const request = new XMLHttpRequest()
+//         request.open('POST' , 'server.php')
+//         request.setRequestHeader('Content-type ' , 'application/json')
+//
+//         const formData = new FormData(form)
+//         const user = {}
+//         formData.forEach((item , index) => user[index] = item)
+//         const userJson = JSON.stringify(user)
+//
+//         request.send()
+//     })
+// }
+// postData(formElement)
+
+const postData = async (url, data) =>{
+    return fetch(url, {
+        method:'POST',
+        headers:{"Content-type" :"application/json" },
+        body:data
+    })
+}
+const bindPostData = (form) => {
+    form.onsubmit = async (event) => {
+        event.preventDefault()
+        const formData = new FormData(form)
+        const user = {}
+        formData.forEach((item , index) => user[index] = item)
+        const userJson = JSON.stringify(user)
+        window.location.pathname === '/project/index.html'?
+            await postData('server.php' , userJson):
+            await postData('../server.php' , userJson)
+    }
+}
+bindPostData(formElement)
+// console.log(window.location.pathname)

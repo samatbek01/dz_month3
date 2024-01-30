@@ -55,7 +55,7 @@
 
 .main_block {
     padding: 100px 0;
-    background: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1g8_h4yU9j7S_YAV74XDGHZJk2cvqV8A2EeQ8EfghKVyWNj8j9FbuvpE6RM4bt004iH4&usqp=CAU");
 }
 
 /* BUTTONS COLOR PICKER */
@@ -96,7 +96,8 @@
 
 .slider_block {
     padding: 100px 0;
-    background: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1g8_h4yU9j7S_YAV74XDGHZJk2cvqV8A2EeQ8EfghKVyWNj8j9FbuvpE6RM4bt004iH4&usqp=CAU");
+
 }
 
 .slider {
@@ -140,10 +141,16 @@
     text-align: justify;
     margin: 10px 0;
 }
+.slider_card img {
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+}
 
 .slide_card a {
     color: var(--orange);
     text-decoration: underline;
+    gap: 20px;
 }
 
 .slide.active_slide {
@@ -153,7 +160,7 @@
 /* VIDEO BLOCK */
 
 .block_video {
-    background: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1g8_h4yU9j7S_YAV74XDGHZJk2cvqV8A2EeQ8EfghKVyWNj8j9FbuvpE6RM4bt004iH4&usqp=CAU");
     padding: 100px 0;
 }
 
@@ -228,7 +235,7 @@
 /*-------BOTTLE-------*/
 
 .botlle {
-    background: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1g8_h4yU9j7S_YAV74XDGHZJk2cvqV8A2EeQ8EfghKVyWNj8j9FbuvpE6RM4bt004iH4&usqp=CAU");
     padding: 100px 0;
 }
 

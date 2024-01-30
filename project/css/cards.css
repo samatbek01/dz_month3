@@ -1,0 +1,35 @@
+.wrapper {
+    background: black;
+}
+
+.cardBig {
+    width: 400px;
+    height: 300px;
+    background-color: #01b4fd;
+}
+.cardImg{
+    width: 400px;
+    height: 200px;
+    display: flex;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
+}
+.cardTitle {
+    font-size: 14px;
+    text-align: center;
+}
+.cardText {
+ font-size: 12px;
+}
